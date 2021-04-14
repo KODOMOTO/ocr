@@ -13,6 +13,7 @@
         (function() {
             Tesseract
                 .recognize("u.jpg", {
+                    tessedit_char_whitelist: '0123456789',
                     lang: 'eng'
                 })
                 .progress(function(p) {
