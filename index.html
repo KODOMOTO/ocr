@@ -73,6 +73,7 @@
                 const url = snapshot.toDataURL("image/png");
                 Tesseract
                     .recognize(url, {
+                        tessedit_char_whitelist: '0123456789',
                         lang: 'eng'
                     })
                     .progress(function(p) {
