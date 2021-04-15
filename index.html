@@ -14,6 +14,7 @@
             Tesseract
                 .recognize("u.jpg", {
                     langPath: "https://kodomoto.github.io/display_ocr/letsgodigital/letsgodigital.traineddata",
+                    gzip: false,
                     lang: 'letsgodigital'
                 })
                 .progress(function(p) {
