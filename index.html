@@ -13,8 +13,8 @@
         (function() {
             Tesseract
                 .recognize("u.jpg", {
-                    tessedit_char_whitelist: '0123456789',
-                    lang: 'eng'
+                    langPath: "https://kodomoto.github.io/display_ocr/letsgodigital/letsgodigital.traineddata",
+                    lang: 'letsgodigital'
                 })
                 .progress(function(p) {
                     $("#msg").text('in Progress🐹 <' + p.status + ": " + (100 * p.progress).toFixed(1) + '%>')
