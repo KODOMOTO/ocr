@@ -12,8 +12,10 @@
     <script>
         (function() {
             Tesseract
+                .create({
+                    langPath: "https://kodomoto.github.io/ocr/"
+                })
                 .recognize("u.jpg", {
-                    langPath: "https://kodomoto.github.io/ocr/",
                     lang: 'letsgodigital'
                 })
                 .progress(function(p) {
